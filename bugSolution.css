@@ -1,0 +1,22 @@
+/* bugSolution.css */
+
+/* Correctly handles nested calculations and unit consistency */
+.container {
+  width: calc(50% - 10px);
+  height: calc(100vh - 20px);
+}
+
+/* Correct use of parentheses to establish order of operations */
+.element {
+  width: calc((100px + 20px) / 2);
+}
+
+/* Ensures unit consistency for accurate calculations */
+.anotherElement {
+  padding: calc(10px + 2em); /* Assuming em is defined elsewhere */
+}
+
+/* Avoids unit mismatches by converting to a single unit */
+.yetAnother {
+  margin: calc( (100px + 2em) / 2); /* This is still not ideal - convert everything to one unit for best practice */
+}
